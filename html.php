@@ -1,6 +1,6 @@
 <?php
 	class HTML {
-		public static function parse($node,$attrs=array(),$str=null) {
+		public static function parse($node,$str=null,$attrs=array()) {
 			if (!empty($node)) {
 				$html = "<{$node}";
 				if (!empty($attrs)) foreach ($attrs as $attr => $value) $html .= " {$attr}=\"{$value}\"";
